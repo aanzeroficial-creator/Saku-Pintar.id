@@ -794,6 +794,18 @@
                 display: flex !important;
             }
         }
+        @media (max-width: 940px) and (max-height: 500px), (max-width: 768px) and (orientation: portrait) {
+            #game-container {
+                width: 1000px !important;
+                margin: 0px auto !important;
+                transition: transform 0.2s !important;
+                transform: scale(0.7) !important;
+                transform-origin: left top !important;
+            }
+            #game-wrapper {
+                height: 294px !important; /* 420 * 0.7 = 294px */
+            }
+        }
     </style>
 </head>
 
@@ -1470,6 +1482,19 @@
 
             const isLandscape = window.innerHeight < window.innerWidth || window.innerHeight < 600;
             const baseHeight = isLandscape ? 420 : 580;
+            
+            const isMobile = (window.innerWidth <= 940 && window.innerHeight <= 500) || 
+                             (window.innerWidth < 768 && window.innerHeight > window.innerWidth);
+            if (isMobile) {
+                container.style.width = '1000px';
+                container.style.margin = '0px auto';
+                container.style.transition = 'transform 0.2s';
+                container.style.transform = 'scale(0.7)';
+                container.style.transformOrigin = 'left top';
+                wrapper.style.height = `${baseHeight * 0.7}px`;
+                return;
+            }
+
 
 
             let heightOffset = 180;
@@ -1497,6 +1522,7 @@
                 wrapper.style.height = `${baseHeight * scale}px`;
             } else {
                 container.style.transform = 'none';
+                container.style.transformOrigin = 'center top';
                 wrapper.style.height = 'auto';
             }
         }
