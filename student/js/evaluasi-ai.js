@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    const btnForceLandscape = document.getElementById('btnForceLandscape');
+    if (btnForceLandscape) {
+        btnForceLandscape.addEventListener('click', () => {
+            if (typeof playClickSound === 'function') playClickSound();
+            const docElm = document.documentElement;
+            if (docElm.requestFullscreen) docElm.requestFullscreen();
+            else if (docElm.mozRequestFullScreen) docElm.mozRequestFullScreen();
+            else if (docElm.webkitRequestFullScreen) docElm.webkitRequestFullScreen();
+            else if (docElm.msRequestFullscreen) docElm.msRequestFullscreen();
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch(function(error) {
+                    console.log("Kunci orientasi gagal:", error);
+                });
+            }
+        });
+    }
+    
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+                     (navigator.maxTouchPoints > 0 && window.innerWidth <= 1024);
+    if (!isMobile) {
+        const warningEl = document.getElementById('landscape-warning');
+        if (warningEl) {
+            warningEl.style.setProperty('display', 'none', 'important');
+        }
+    }
     function formatItemNameWithQty(name, qty) {
         if (qty <= 1) return name;
 
