@@ -217,6 +217,7 @@ body::before {
 
 
 .video-section {
+    width: 650px;
     background: white;
     padding: 30px;
     border-radius: 20px;
