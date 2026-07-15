@@ -24,7 +24,7 @@
                     alt="Avatar"
                     style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: #fff;">
                 <div class="profile-info" style="flex: 1;">
-                    <h3 id="sidebarName">Aan Rifai, S.Pd.</h3>
+                    <h3 id="sidebarName">Nur Khayati, S.Pd.</h3>
                     <p id="sidebarRole">Guru PNS</p>
                 </div>
                 <button id="btnEditProfile" title="Edit Profil"
@@ -34,13 +34,13 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a href="#" class="nav-item active" data-target="section-live-monitor">📡 Live Monitor Siswa</a>
-                <a href="#" class="nav-item" data-target="section-activity-log">📝 Jejak Aktivitas</a>
-                <a href="#" class="nav-item" data-target="section-mix-match">🎮 Hasil Pilah Aku</a>
-                <a href="#" class="nav-item" data-target="section-eval-quiz">🏆 Hasil Kuis & Belajar</a>
-                <a href="#" class="nav-item" data-target="section-plan">💰 Perencanaan Keuangan</a>
-                <a href="#" class="nav-item" data-target="section-review-foto">🏪 Manajemen Toko & Barang</a>
-                <a href="#" class="nav-item" data-target="section-settings">⚙️ Pengaturan & Cerita</a>
+                <a href="#" class="nav-item active" data-target="section-live-monitor">Live Monitor Siswa</a>
+                <a href="#" class="nav-item" data-target="section-activity-log">Jejak Aktivitas</a>
+                <a href="#" class="nav-item" data-target="section-mix-match">Hasil Pilah Aku</a>
+                <a href="#" class="nav-item" data-target="section-eval-quiz">Hasil Kuis & Belajar</a>
+                <a href="#" class="nav-item" data-target="section-plan">Perencanaan Keuangan</a>
+                <a href="#" class="nav-item" data-target="section-review-foto">Manajemen Toko & Barang</a>
+                <a href="#" class="nav-item" data-target="section-settings">Pengaturan & Cerita</a>
             </nav>
         </aside>
 
@@ -50,7 +50,7 @@
 
             <header class="top-nav">
                 <div class="top-brand">
-                    <span class="logo-icon">🏛️</span>
+                    <span class="logo-icon"><img>facicon.jpeg</img></span>
                     <h2>Dasbor Saku Pintar</h2>
                 </div>
 
@@ -67,7 +67,7 @@
                     style="display: block; margin-bottom: 30px; border-top: 5px solid #2ECC71;">
                     <div
                         style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
-                        <h2 style="margin: 0; color: #2C3E50;">📡 Live Monitor Siswa Aktif</h2>
+                        <h2 style="margin: 0; color: #2C3E50;">Live Monitor Murid Aktif</h2>
                         <span id="activeCountBadge"
                             style="background: #2ECC71; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold;">0
                             Siswa Online</span>
@@ -87,7 +87,7 @@
                     style="display: none; margin-bottom: 30px; border-top: 5px solid #3498DB;">
                     <div
                         style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
-                        <h2 style="margin: 0; color: #2C3E50;">Jejak Aktivitas Siswa Terbaru</h2>
+                        <h2 style="margin: 0; color: #2C3E50;">Jejak Aktivitas Murid Terbaru</h2>
                         <button id="btnClearActivityLogs"
                             style="background:#E74C3C; color:white; border:none; padding:5px 15px; border-radius:5px; cursor:pointer; font-size:0.9rem;">Bersihkan
                             Log</button>
@@ -101,7 +101,7 @@
                                 <tr>
                                     <th style="padding: 10px; border-bottom: 2px solid #ddd; text-align: left;">Waktu
                                     </th>
-                                    <th style="padding: 10px; border-bottom: 2px solid #ddd; text-align: left;">Siswa
+                                    <th style="padding: 10px; border-bottom: 2px solid #ddd; text-align: left;">Murid
                                     </th>
                                     <th style="padding: 10px; border-bottom: 2px solid #ddd; text-align: left;">Kelas
                                     </th>
@@ -126,7 +126,7 @@
                         style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                         <h3 style="margin: 0; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Laporan Pilah Aku</h3>
                         <div style="display: flex; gap: 10px;">
-                            <button id="btnLeaderboardPilahku" class="btn-game-leaderboard">🏆 Lihat Leaderboard</button>
+                            <button id="btnLeaderboardPilahku" class="btn-game-leaderboard">Lihat Leaderboard</button>
                             <button id="btnClearMixMatch" class="btn-game-danger">Bersihkan Data</button>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                     
                     <div id="mixMatchLeaderboardOverlay" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #FDFEFE; border-radius: 15px; z-index: 100; padding: 25px; box-sizing: border-box; flex-direction: column;">
                         <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #BDC3C7; padding-bottom: 12px; margin-bottom: 15px; flex-shrink: 0;">
-                            <h3 style="margin: 0; color: #2C3E50; font-family: 'Fredoka', sans-serif;">🏆 Leaderboard Pilah Aku</h3>
+                            <h3 style="margin: 0; color: #2C3E50; font-family: 'Fredoka', sans-serif;"> Leaderboard Pilah Aku</h3>
                             <button id="btnClosePilahkuLeaderboard" class="btn-game-leaderboard" style="box-shadow: 0 4px 0 #BDC3C7; border-color: #BDC3C7; background: #ECF0F1; color: #333;">Kembali ke Laporan</button>
                         </div>
                         <div style="flex: 1; overflow-y: auto;">
@@ -185,11 +185,11 @@
                                 <label style="font-weight:bold;">Pilih Toko:</label>
                                 <select id="inputToko" class="form-control" style="padding:10px;" required>
                                     <option value="">-- Pilih Toko --</option>
-                                    <option value="Toko Mainan">🧸 Toko Mainan</option>
-                                    <option value="Toko Buku & Alat Tulis">📚 Toko Buku & Alat Tulis</option>
-                                    <option value="Toko Makanan">🍔 Toko Makanan</option>
-                                    <option value="Toko Pakaian">👕 Toko Pakaian</option>
-                                    <option value="Toko Elektronik">📱 Toko Elektronik</option>
+                                    <option value="Toko Mainan">Toko Mainan</option>
+                                    <option value="Toko Buku & Alat Tulis">Toko Buku & Alat Tulis</option>
+                                    <option value="Toko Makanan">Toko Makanan</option>
+                                    <option value="Toko Pakaian">Toko Pakaian</option>
+                                    <option value="Toko Elektronik">Toko Elektronik</option>
                                 </select>
                             </div>
                             <div class="setting-group" style="display:flex; flex-direction:column; gap:8px;">
@@ -232,7 +232,7 @@
                         <div style="display:flex; flex-direction:column; gap:20px; margin-top:15px;">
 
                             <div style="padding-bottom: 20px; border-bottom: 2px solid #ECF0F1; margin-bottom: 20px;">
-                                <h4 style="margin-top:0; color:#E67E22;">⏱️ Pengaturan Waktu Kuis Belanja</h4>
+                                <h4 style="margin-top:0; color:#E67E22;"> Pengaturan Waktu Kuis Belanja</h4>
                                 <p style="font-size:0.9rem; color:#7F8C8D; margin-bottom: 10px;">Atur batas waktu bagi
                                     siswa saat mengerjakan kuis belanja.</p>
                                 <div style="display: flex; gap: 15px; align-items: center;">
@@ -277,7 +277,7 @@
                             </div>
                             <div
                                 style="margin-top: 15px; margin-bottom: 15px; background: #e8f4f8; border: 2px solid #3498DB; border-radius: 10px; padding: 15px;">
-                                <h4 style="color: #2980B9; margin-top: 0; margin-bottom: 10px;">📡 Status Pengundian
+                                <h4 style="color: #2980B9; margin-top: 0; margin-bottom: 10px;">Status Pengundian
                                     Cerita (Live)</h4>
                                 <div id="undianStatusText"
                                     style="margin-bottom: 10px; font-weight: bold; color: #34495E;">Memuat status
@@ -305,9 +305,9 @@
                         style="display: none; margin-bottom: 20px;">
                         <div
                             style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                            <h3 style="margin: 0; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">🏆 Laporan Si Pembeli Cerdas</h3>
+                            <h3 style="margin: 0; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Laporan Si Pembeli Cerdas</h3>
                             <div style="display: flex; gap: 10px;">
-                                <button id="btnLeaderboardKuis" class="btn-game-leaderboard">🏆 Lihat Leaderboard</button>
+                                <button id="btnLeaderboardKuis" class="btn-game-leaderboard">Lihat Leaderboard</button>
                                 <button id="btnClearEval" class="btn-game-danger">Bersihkan Data Kuis</button>
                             </div>
                         </div>
@@ -328,7 +328,7 @@
                         <!-- Overlay Leaderboard Kuis -->
                         <div id="kuisLeaderboardOverlay" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #FDFEFE; border-radius: 15px; z-index: 100; padding: 25px; box-sizing: border-box; flex-direction: column;">
                             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #BDC3C7; padding-bottom: 12px; margin-bottom: 15px; flex-shrink: 0;">
-                                <h3 style="margin: 0; color: #2C3E50; font-family: 'Fredoka', sans-serif;">🏆 Leaderboard Si Pembeli Cerdas</h3>
+                                <h3 style="margin: 0; color: #2C3E50; font-family: 'Fredoka', sans-serif;">Leaderboard Si Pembeli Cerdas</h3>
                                 <button id="btnCloseKuisLeaderboard" class="btn-game-leaderboard" style="box-shadow: 0 4px 0 #BDC3C7; border-color: #BDC3C7; background: #ECF0F1; color: #333;">Kembali ke Laporan</button>
                             </div>
                             <div style="flex: 1; overflow-y: auto;">
