@@ -32,13 +32,56 @@
 
         body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             background-color: #85C1E9;
-            
+            gap: 24px;
+            padding: 20px 0;
+            box-sizing: border-box;
             margin: 0;
             overflow-x: hidden;
+        }
+
+        /* === LOGO BAR === */
+        .logo-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            background: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 999px;
+            border: 2px solid rgba(255, 255, 255, 0.55);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), inset 0 0 12px rgba(255,255,255,0.4);
+            max-width: 720px;
+            width: 90%;
+            position: relative;
+            z-index: 2;
+            animation: fadeSlideDown 0.6s ease both;
+        }
+
+        .logo-bar img {
+            height: 60px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        @keyframes fadeSlideDown {
+            from { opacity: 0; transform: translateY(-18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .logo-bar {
+                border-radius: 20px;
+                padding: 10px 16px;
+            }
+            .logo-bar img { height: 42px; }
         }
 
         
@@ -210,6 +253,13 @@
 
 <body ontouchstart="">
 
+    <!-- LOGO BAR INSTITUSI -->
+    <div class="logo-bar" role="banner" aria-label="Logo institusi pendukung">
+        <img
+            src="shared/assets/logo di halaman awal.png"
+            alt="Logo institusi: Kemendikbudristek, DIKTISAINTEK BERDAMPAK, UNIMED, FIP, UNNES, Saku Pintar"
+        >
+    </div>
 
     <div class="portal-card">
         <h1>Saku Pintar</h1> 
